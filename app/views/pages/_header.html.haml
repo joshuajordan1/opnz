@@ -1,49 +1,38 @@
-%section.hero.is-primary.is-medium
-  / Hero head: will stick at the top
-  .hero-head
-    %nav.navbar
-      .container
-        .navbar-brand
-          %a.navbar-item
-            %img{:alt => "Logo", :src => "https://bulma.io/images/bulma-type-white.png"}/
-          %span.navbar-burger{"data-target" => "navbarMenuHeroA"}
-            %span
-            %span
-            %span
-        #navbarMenuHeroA.navbar-menu
-          .navbar-end
-            %a.navbar-item.is-active
-              Home
-            %a.navbar-item
-              Examples
-            %a.navbar-item
-              Documentation
-            %span.navbar-item
-              %a.button.is-primary.is-inverted
-                %span.icon
-                  %i.fab.fa-github
-                %span Download
-  / Hero content: will be in the middle
+%nav.navbar
+  .container
+    #navMenu.navbar-menu
+      .navbar-brand
+        %a.navbar-item
+          = image_tag("opnz_screenshot.png")
+        %span.navbar-burger{"data-target" => "navbarMenuHeroA"}
+      .navbar-start
+        %a.navbar-item    
+          Home
+        %a.navbar-item
+          Our Service
+        %a.navbar-item
+          Why Metaline?
+        %a.navbar-item
+          Coating Results
+        %a.navbar-item
+          About        
+      .navbar-end
+        .navbar-item
+          .buttons
+            %a.button.is-dark Contact Us
+%section.hero.is-link.is-fullheight-with-navbar
   .hero-body
     .container.has-text-centered
       %p.title
-        Title
-      %p.subtitle
-        Subtitle
-  / Hero footer: will stick at the bottom
-  .hero-foot
-    %nav.tabs
-      .container
-        %ul
-          %li.is-active
-            %a Overview
-          %li
-            %a Modifiers
-          %li
-            %a Grid
-          %li
-            %a Elements
-          %li
-            %a Components
-          %li
-            %a Layout
+        OPNZ is a Metaline coating distributor and application service based in Tauranga
+      %p.subtitle - We distribute Metaline the #1 coating product for pumps and turbines in New Zealand - See Comparison Table
+      %p.subtitle - We provide a quality application service at our workshop in Tauranga, or we can come to you
+      %p.subtitle - Ongoing support and guaranteed satisfaction
+      %button.button.is-primary Contact Us
+
+
+.columns.is-mobile
+  .column 1
+  .column 2
+  .column 3
+  .column 4
