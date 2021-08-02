@@ -1,31 +1,37 @@
-%nav.navbar
-  .container
-    #navMenu.navbar-menu
-      .navbar-brand
-        %a.navbar-item
-          = image_tag("opnz_screenshot.png")
-        %span.navbar-burger{"data-target" => "navbarMenuHeroA"}
-      .navbar-start
-        %a.navbar-item    
-          Home
-        %a.navbar-item{:href => "#service"}
-          Our Service
-        %a.navbar-item
-          Why Metaline?
-        %a.navbar-item
-          Coating Results
-        %a.navbar-item
-          About        
+#navbar
+  %nav.navbar
+    .container
+      #navMenu.navbar-menu
+        .navbar-brand
+          %a.navbar-item
+            = image_tag("opnz_screenshot.png")
+          %span.navbar-burger{"data-target" => "navbarMenuHeroA"}
+        .navbar-start
+          %a.navbar-item    
+            Home
+          %a.navbar-item{:href => "#service"}
+            Our Service
+          %a.navbar-item
+            Why Metaline?
+          %a.navbar-item
+            Coating Results
+          %a.navbar-item
+            About        
       .navbar-end
         .navbar-item
           .buttons
             %a.button.is-dark Contact Us
+          
+            %a.button Call 021 122 9271
 %section.hero.is-link.is-fullheight-with-navbar
   .hero-body
-    .container.has-text-centered
-      %p.title
-        OPNZ is a Metaline coating distributor and application service based in Tauranga
-      %p.subtitle - We distribute Metaline the #1 coating product for pumps and turbines in New Zealand - See Comparison Table
-      %p.subtitle - We provide a quality application service at our workshop in Tauranga, or we can come to you
-      %p.subtitle - Ongoing support and guaranteed satisfaction
-      %button.button.is-primary Contact Us
+    .container
+      .columns 
+        .column.is-one-third
+          %p.title
+            OPNZ is a Metaline coating distributor and application service based in Tauranga
+          %p.subtitle We distribute Metaline the #1 coating product for pumps and turbines in New Zealand - 
+          %a{:href => "#why-metaline"} See Comparison Table
+          %p.subtitle We provide a quality application service at our workshop in Tauranga, or we can come to you
+          %p.subtitle Ongoing support and guaranteed satisfaction
+          %button.button.is-primary Contact Us
