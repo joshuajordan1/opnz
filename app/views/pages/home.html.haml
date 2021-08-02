@@ -1,24 +1,29 @@
 = render 'header'
+// oil states and metaline logos
+.columns.is-mobile.is-centered
+  .column
+    = image_tag("metaline_oilstates.png", :class => "below-hero-images center")
 
-%nav.level.is-mobile
-  .level-item.has-text-centered
-    %div
-      %p.heading Tweets
-      %p.title 3,456
-  .level-item.has-text-centered
-    %div
-      %p.heading Following
-      %p.title 123
-  .level-item.has-text-centered
-    %div
-      %p.heading Followers
-      %p.title 456K
-  .level-item.has-text-centered
-    %div
-      %p.heading Likes
-      %p.title 789
+// problem section
+.columns.is-mobile.is-centered
+  .column.is-two-thirds 
+    %p.title Metaline extends the life of parts and systems operating in harsh evironments - so you can avoid expensive replacements and associated downtime.
+    %p.subtitle Pumps, turbines and many systems which face a range of conditions such as:
+    .columns 
+      .column 
+        %p Cavitation 
+      .column
+        %p Strong Forces
+      .column
+        %p Extremes in pH 
+    %button.button.is-primary Send a Message
 
+//  step by step process
+.columns
 #service  yes
+
+
+
 
 :javascript 
     window.onscroll = function() {myFunction()};
