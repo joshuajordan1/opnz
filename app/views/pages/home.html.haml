@@ -7,22 +7,77 @@
 // problem section
 .columns.is-mobile.is-centered
   .column.is-two-thirds 
-    %p.title Metaline extends the life of parts and systems operating in harsh evironments - so you can avoid expensive replacements and associated downtime.
-    %p.subtitle Pumps, turbines and many systems which face a range of conditions such as:
-    .columns 
-      .column 
-        %p Cavitation 
-      .column
-        %p Strong Forces
-      .column
-        %p Extremes in pH 
-    %button.button.is-primary Send a Message
+    .box
+      %p.title.block Metaline extends the life of parts and systems operating in harsh evironments - so you can avoid expensive replacements and associated downtime.
+      %p.subtitle.block Pumps, turbines and parts which face a range of conditions such as corrosion cavitation, strong forces, extremes in pH and many others.
+      %a See More Info On Metaline
+    .box#coating-results
+      %p.title.block 
+        Flange & Foot Piece Leakage
+        %a Read full case study
+      %p.subtitle Typical Appearance Before
+      = image_tag 'a', alt: '', height: '', width: '', class: ''
+      = image_tag 'b'
+      = image_tag 'c'
+      = image_tag 'd'
+    .box
+      %p.subtitle Treated With Metaline
+      = image_tag 'e'
+      = image_tag 'f'
+      = image_tag 'g'
+      = image_tag 'h'
+      = image_tag 'i'
+
+#why-metaline
+  .columns.is-mobile.is-centered
+    .column.is-two-thirds 
+      %p.title Why Metaline?
+      %p.subtitle Compare Metaline to other coatings commonly found in NZ
+      %table.table.is-bordered.is-striped.is-narrow.is-hoverable.is-fullwidth
+        %thead 
+          %th Metaline 
+          %th Competitor 1
+          %th Competitor 2
+        %tbody 
+          %td Metaline property 
+          %td Competitor property 1
+          %td Competitor property 2 
+        %tbody
+          %td Metaline property 
+          %td Competitor property 1
+          %td Competitor property 2 
+        %tbody
+          %td Metaline property 
+          %td Competitor property 1
+          %td Competitor property 2 
+        %tbody
+          %td Metaline property 
+          %td Competitor property 1
+          %td Competitor property 2 
+        %tbody
+          %td Metaline property 
+          %td Competitor property 1
+          %td Competitor property 2 
 
 //  step by step process
 .columns
-#service  yes
-
-
+#service 
+  
+  .columns.is-mobile.is-centered
+    
+    .column.is-two-thirds
+      .box
+        %p.title Our Coating Process 
+        .columns.is-mobile-is-centered
+          .column.is-one-third 
+            %p.subtitle Hassle Free Interaction
+            %p We can come to you to pick up parts for coating or you can visit us at our shop located at Mt. Maunganui. We are mobile and provide coating services for clients throughout New Zealand.
+          .column.is-one-third 
+            %p.subtitle Expert Coating Application
+            %p Coating parts with Metaline requires a controlled environment, technical skills and experience. It is more complicated than other coatings you may be familiar with. We can coat the parts for you, or train team members to do it.
+          .column.is-one-third 
+            %p.subtitle You Save Money
+            %p We return your parts and you save money by avoiding expensive replacement costs. We provide ongoing support and assistance.
 
 
 :javascript 
