@@ -63,18 +63,29 @@
 
 //  step by step process
 .columns
+#service 
+  .columns.is-mobile.is-centered
+    .column.is-two-thirds
+      .box
+        %p.title Our Coating Process 
+        .columns.is-mobile-is-centered
+          .column.is-one-third 
+            %p.subtitle Hassle Free Interaction
+            %p We can come to you to pick up parts for coating or you can visit us at our shop located at Mt. Maunganui. We are mobile and provide coating services for clients throughout New Zealand.
+          .column.is-one-third 
+            %p.subtitle Expert Coating Application
+            %p Coating parts with Metaline requires a controlled environment, technical skills and experience. Applying Metaline is more complicated than other coatings you may be familiar with. We can coat the parts for you, or train team members to do it.
+          .column.is-one-third 
+            %p.subtitle You Save Money
+            %p We return your parts and you save money by avoiding expensive replacement costs. We provide ongoing support and assistance.
+// contact
+.columns
 #contact 
   .columns.is-mobile.is-centered
     .column.is-two-thirds
       .box
         %p.title Contact Us
-        .columns.is-mobile-is-centered
-          = render 'form'
-.columns
-#service 
-  .columns.is-mobile.is-centered
-    .column.is-two-thirds
-      .box
+        = render 'form'
 
 = render 'footer'
 
