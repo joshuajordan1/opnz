@@ -3,19 +3,6 @@
   %span{"aria-hidden" => "true"}
   %span{"aria-hidden" => "true"}
 
-#navMenu.navbar-menu
-  / navbar-start, navbar-end...
-  %a.navbar-item 
-    Home 
-  %a.navbar-item{:href => "#service"}
-    Service 
-  %a.navbar-item{:href => "#why-metaline"}
-    Why Metaline? 
-  %a.navbar-item{:href => "#results"}
-    Coating Results
-  %a.navbar-item{:href => "#about"}
-    About
-
 #navbar
   %nav.navbar
     .container
@@ -25,21 +12,21 @@
             = image_tag("opnz_screenshot.png")
           %span.navbar-burger{"data-target" => "navbarMenuHeroA"}
         .navbar-start
-          %a.navbar-item    
-            Home
+          %a.navbar-item 
+            Home 
           %a.navbar-item{:href => "#service"}
-            Our Service
+            Service 
           %a.navbar-item{:href => "#why-metaline"}
-            Why Metaline?
+            Why Metaline? 
           %a.navbar-item{:href => "#results"}
             Coating Results
           %a.navbar-item{:href => "#about"}
             About
-      .navbar-end
-        .navbar-item
-          .buttons
-            %a.button{:href => "#contact"} Contact Us
-            %a.button.is-dark Call 021 122 9271
+        .navbar-end
+          .navbar-item
+            .buttons
+              %a.button{:href => "#contact"} Contact Us
+              %a.button.is-dark Call 021 122 9271
 
 %section.hero.is-link.is-fullheight-with-navbar
   .hero-body
@@ -57,7 +44,7 @@
                   %u Compare Metaline Properties With Other Coatings Found In NZ          
               %p.subtitle Our team provides a quality application service at our workshop in Tauranga, or we can come to you.
               %p.subtitle We provide ongoing support, technical expertise and guaranteed satisfaction
-              .button.is-primary Make an Equiry
+              .button.is-primary{:href => "#contact"} Make an Equiry
             .column.is-one-third 
               //Improve The Life Of Your Products
               // put image here
