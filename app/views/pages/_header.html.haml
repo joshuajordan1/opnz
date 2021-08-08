@@ -1,3 +1,21 @@
+%a.navbar-burger{"aria-expanded" => "false", "aria-label" => "menu", "data-target" => "navMenu", :role => "button"}
+  %span{"aria-hidden" => "true"}
+  %span{"aria-hidden" => "true"}
+  %span{"aria-hidden" => "true"}
+
+#navMenu.navbar-menu
+  / navbar-start, navbar-end...
+  %a.navbar-item 
+    Home 
+  %a.navbar-item{:href => "#service"}
+    Service 
+  %a.navbar-item{:href => "#why-metaline"}
+    Why Metaline? 
+  %a.navbar-item{:href => "#results"}
+    Coating Results
+  %a.navbar-item{:href => "#about"}
+    About
+
 #navbar
   %nav.navbar
     .container
@@ -11,16 +29,16 @@
             Home
           %a.navbar-item{:href => "#service"}
             Our Service
-          %a.navbar-item
+          %a.navbar-item{:href => "#why-metaline"}
             Why Metaline?
-          %a.navbar-item
+          %a.navbar-item{:href => "#results"}
             Coating Results
-          %a.navbar-item
-            About        
+          %a.navbar-item{:href => "#about"}
+            About
       .navbar-end
         .navbar-item
           .buttons
-            %a.button Enquire
+            %a.button{:href => "#contact"} Contact Us
             %a.button.is-dark Call 021 122 9271
 
 %section.hero.is-link.is-fullheight-with-navbar
@@ -43,3 +61,31 @@
             .column.is-one-third 
               //Improve The Life Of Your Products
               // put image here
+
+
+:javascript
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+  
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+  
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
+  
+  });

@@ -1,0 +1,17 @@
+= form_with(url: pages_path) do |form|
+
+  .field
+    = form.label :name
+    = form.text_field :name, class: "input"
+  .field
+    = form.label :email
+    = form.text_field :email, class: "input"
+  .field
+    = form.label :phone
+    = form.text_field :phone, class: "input"
+  .field
+    = form.label :message
+    = form.text_field :message, class: "textarea"
+  .actions
+    = form.submit "Send a Message", class: "button is-primary"
+

@@ -13,7 +13,7 @@
       %div.block
       %p.subtitle.block Pumps, turbines and parts which face a range of conditions such as corrosion cavitation, strong forces, extremes in pH and many others.
       %a See More Info On Metaline
-    .box#coating-results
+    .box#results
       %p.title.block 
         Flange & Foot Piece Leakage
         %a Read full case study
@@ -63,21 +63,18 @@
 
 //  step by step process
 .columns
+#contact 
+  .columns.is-mobile.is-centered
+    .column.is-two-thirds
+      .box
+        %p.title Contact Us
+        .columns.is-mobile-is-centered
+          = render 'form'
+.columns
 #service 
   .columns.is-mobile.is-centered
     .column.is-two-thirds
-      .box#service
-        %p.title Our Coating Process 
-        .columns.is-mobile-is-centered
-          .column.is-one-third 
-            %p.subtitle Hassle Free Interaction
-            %p We can come to you to pick up parts for coating or you can visit us at our shop located at Mt. Maunganui. We are mobile and provide coating services for clients throughout New Zealand.
-          .column.is-one-third 
-            %p.subtitle Expert Coating Application
-            %p Coating parts with Metaline requires a controlled environment, technical skills and experience. Applying Metaline is more complicated than other coatings you may be familiar with. We can coat the parts for you, or train team members to do it.
-          .column.is-one-third 
-            %p.subtitle You Save Money
-            %p You receive your coated parts with minimal downtime and you save money by avoiding expensive replacement costs. We strive to provide ongoing support and assistance.
+      .box
 
 = render 'footer'
 
