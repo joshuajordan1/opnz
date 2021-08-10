@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/pages/privacy'
   get 'pages/success'
   get 'pages/fail'
+  get 'pages/pdf'
   resources :pages, only: [:create, :get]
 end
