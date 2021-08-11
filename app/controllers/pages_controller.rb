@@ -12,9 +12,6 @@ class PagesController < ApplicationController
     def fail 
     end
 
-    def pdf 
-        redirect_to '/pages/700.pdf'
-    end
 
     def create
         @contact = Contact.new(:name => params["name"], :email => params["email"], :phone => params["phone"], :message => params["message"])
