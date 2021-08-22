@@ -1,44 +1,26 @@
 = render 'header'
 
 // problem section
-.columns.is-mobile.is-centered
+%div.block
+.columns.is-mobile.is-centered.block
   .column.is-two-thirds 
     .box
-      = image_tag("metaline_oilstates.png", :class => "below-hero-images center")
+      = image_tag("metaline_oilstates.png")
       %div.block
-      %p.title.block Metaline extends the life of parts and systems operating in harsh evironments - so you can avoid expensive replacements and associated downtime.
+      %p.title Metaline extends the service life of parts and systems operating in harsh evironments.
       %div.block
 
-      %p.subtitle.block Pumps, turbines and parts which face a range of conditions such as corrosion, cavitation, strong forces, extremes in pH and many others.
-      
-
-
-    .box#results
-      %p.title.block 
-        Flange & Foot Piece Leakage
-        %a Read full case study
-      %p.subtitle Typical Appearance Before
-      = image_tag 'a', alt: '', height: '', width: '', class: ''
-      = image_tag 'b'
-      = image_tag 'c'
-      = image_tag 'd'
-    .box
-      %p.subtitle Treated With Metaline
-      = image_tag 'e'
-      = image_tag 'h'
-      = image_tag 'i'
-      = image_tag 'f'
-      = image_tag 'g'
-
+      %p.subtitle.block Pumps, turbines and parts which face a range of conditions such as corrosion, cavitation, strong kinetic forces, extremes in pH.
+      %p.subtitle We help you avoid expensive replacement costs and lengthy downtime.
 #why-metaline
   .columns.is-mobile.is-centered
     .column.is-two-thirds 
       .box 
         %p.title Why Metaline?
-        %p.subtitle Metaline extends the life of steel, alloys, rubber, plastic or concrete parts by absorbing destructive kinetic forces. 
-        %p.subtitle Spray-on, elastomeric coating which functions like rubber, but posesses erosion resistant qualities equal or greater than Duplex steel.
+        %p.subtitle Metaline extends the service life of steel, alloys, rubber, plastic or concrete parts by absorbing destructive kinetic forces. 
+        %p.subtitle The coating is spray-on, elastomeric based which functions like rubber, but posesses erosion resistant qualities equal or greater than Duplex steel.
         %table.table.is-bordered.is-striped.is-narrow.is-hoverable.is-fullwidth
-          %thead 
+          %thead
             %th 
             %th Metaline 760
             %th.is-selected Metaline 785
@@ -104,20 +86,90 @@
             %td.is-selected AS/NZS 4020:2005 (contact with drinking water), FDA 177.1680, EU 1935/2004 + EU 10/2011
             %td FDA 177.1680, EU 1935/2004 + EU 10/2011
         %br
-        %a.button.is-dark{:href=> "https://drive.google.com/file/d/1Q3CQYhpuLIAros7Tv0qUZTzKQAjyZ8Nq/view?usp=sharing", :target => "blank"} Download Full List Of Metaline Properties
+        %a.button.is-dark{:href=> "https://drive.google.com/file/d/1Q3CQYhpuLIAros7Tv0qUZTzKQAjyZ8Nq/view?usp=sharing", :target => "blank"} Read Full Metaline Properties
         %br
+
+.columns.is-mobile.is-centered.block
+  .column.is-two-thirds 
+    .box#results
+      %p.title.block 
+        Case Study
+      %p.subtitle 
+        Flange Leak Mitigation
+        %a Read full case study
+      %p OPNZ “Flange Seal” Repair System Can Reduce / Eliminate Pit Fluid Recirculation and Save > 30% In Pump Energy Costs
+      %br   
+      %strong
+        %p Typical Flange Appearance Before
+      = image_tag 'a', alt: '', height: '', width: '', class: ''
+      = image_tag 'b'
+      = image_tag 'c'
+      = image_tag 'd'
+      %br
+      %br
+      %strong
+        %p Treated with Metaline 
+      %p Creates a flange seal which reduces pit fluid recirculation and saves > 30% in pump energy costs.
+      = image_tag 'e'
+      = image_tag 'f'
+      = image_tag 'g'
+    .box 
+      %p.title.block 
+        Case Study 
+      %p.subtitle
+        Val-Matic Model 804SV - Combination Air Valve Rehabilitation
+      %p.subtitle Replacement cost is ~$7,300 vs. repair cost ~$2,900
+      %p.subtitle Replacement delivery lead time is 9 -12 weeks vs. 6-8 day repair time
+      %br
+      %strong
+        %p Service Issues
+      %p •Galvanic Corrosion In Inlet & Discharge Ports.
+      %p •Small Solids And Debris Hang-up On Port Corrosion
+      %p •Valve Packing With Debris Due To Material Hang-up In Ports (Until Valve No Longer Functional)
+      %p •H₂S corrosion of Valve baffle & top cover assembly.
+      %p •General Corrosion Beneath OEM Urethane Liner Creating additional hang up points for fine debris
+      %br
+      %strong
+        %p Valve Baffle Corrosion Treatment
+      %p Appearance Before
+      = image_tag "p"
+      %p Treated with Metaline
+      = image_tag "q"
+      %br
+    .box  
+      %strong
+        %p Discharge Port Corrosion Treatment
+      %p Appearance Before
+      = image_tag "r"
+      %p Treated with Metaline
+      = image_tag "s"
+      %br
+    .box 
+      %strong
+        %p Valve Body Before (originally coated with Urethane Paint) & After (Treated with Metaline) 
+      = image_tag 'w'
+    .box
+      %strong
+        %p Discharge Port Corrosion Treatment
+      %p Appearance Before      
+      = image_tag "t"
+      %p Treated with Metaline
+      = image_tag "u"
+    
+
+
 //  step by step process
 .columns
 #service 
   .columns.is-mobile.is-centered
     .column.is-two-thirds
       .box
-        %p.title Our Coating Process Is Efficient & Professional
+        %p.title Metaline Coating Service
         .columns.is-mobile-is-centered
           .column.is-one-third 
             .card
               .card-content
-                %p.subtitle 1. Hassle Free Interaction
+                %p.subtitle 1. Come To Us Or We Can Come To You
                 %p We can come to you to pick up parts for coating or you can visit us at our shop located at Mt. Maunganui. We are mobile and provide coating services for clients throughout New Zealand.
           .column.is-one-third 
             .card
@@ -127,7 +179,7 @@
           .column.is-one-third 
             .card    
               .card-content
-                %p.subtitle 3. You Save Money
+                %p.subtitle 3. Save Money
                 %p We return your parts and you save money by avoiding expensive replacement costs. We provide ongoing support and assistance.
 // contact
 .columns
@@ -140,6 +192,21 @@
         %p Address: Mt. Maunganui
         %br 
         = render 'form'
+        %br 
+.columns
+#oilgas
+  .columns.is-mobile.is-centered
+    .column.is-two-thirds
+      .box
+        %p.title Oil & Gas Projects
+        %p OPNZ can also assist with projects in the Oil & Gas sector including 
+        %br
+        %p.subtitle - Whipstocks 
+        %p.subtitle - Driveshoes 
+        %p.subtitle - Centralisers 
+        %p.subtitle - Big Bore Connectors & Pipe 
+        %p To learn more complete the form above
+
 
 = render 'footer'
 
