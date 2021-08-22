@@ -1,11 +1,10 @@
-%a.navbar-burger{"aria-expanded" => "false", "aria-label" => "menu", "data-target" => "navMenu", :role => "button"}
-  %span{"aria-hidden" => "true"}
-  %span{"aria-hidden" => "true"}
-  %span{"aria-hidden" => "true"}
-
-#navbar
+#navbar.front
   %nav.navbar
     .container
+      %a.navbar-burger{"aria-expanded" => "false", "aria-label" => "menu", "data-target" => "navMenu", :role => "button"}
+        %span{"aria-hidden" => "true"}
+        %span{"aria-hidden" => "true"}
+        %span{"aria-hidden" => "true"}
       #navMenu.navbar-menu
         .navbar-brand
           %a.navbar-item
@@ -14,42 +13,44 @@
         .navbar-start
           %a.navbar-item 
             Home 
-          %a.navbar-item{:href => "#service"}
-            Service 
           %a.navbar-item{:href => "#why-metaline"}
             Why Metaline? 
           %a.navbar-item{:href => "#results"}
-            Coating Results
-          %a.navbar-item{:href => "#about"}
-            About
+            Case Studies
+          %a.navbar-item{:href => "#service"}
+            Coating Service 
+          %a.navbar-item{:href => "#oilgas"}
+            Oil & Gas
         .navbar-end
           .navbar-item
             .buttons
               %a.button{:href => "#contact"} Contact Us
               %a.button.is-dark{:href => "tel:0211229271"} Call 021 122 9271
 
-%section.hero.is-link.is-fullheight-with-navbar
-  .hero-body
+%section.hero.is-fullheight-with-navbar
+  = video_tag "metaline.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "bk-vid"
+  .hero-body.overlay
     .container
       .columns.is-centered
         .column.is-four-fifths
           .columns
             .column.is-one-half.block
-              //= video_tag "beach.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "home_video" 
               %p.title
-                OPNZ is the sole distributor of Metaline in New Zealand, the #1 coating product for increasing the service life of
-                %i pumps and turbines 
-              %br
-              %p.subtitle  
-                %a{:href => "#why-metaline"} 
-                  %u Compare the properties of Metaline     
-              %p.subtitle Our team provides a quality application service at our workshop in Tauranga, or we can come to you.
-              %p.subtitle We provide ongoing support, technical expertise and guaranteed satisfaction
+                %span.white
+                  OPNZ is the sole distributor of Metaline in New Zealand, the #1 coating product for increasing the service life of
+                  %i pumps and turbines 
+              %br    
+              %p.subtitle 
+                %span.white  
+                  Our team provides a quality application service at our workshop in Tauranga, or we can come to you.
+              %p.subtitle 
+                %span.white  
+                  We provide ongoing support, technical expertise and guaranteed satisfaction
+              
               %a.button.is-primary{:href => "#contact"} Make an Equiry
             .column.is-one-third 
               //Improve The Life Of Your Products
               // put image here
-
 
 :javascript
   document.addEventListener('DOMContentLoaded', () => {
